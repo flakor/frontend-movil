@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ item.type }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  *ngIf="item.type ==  'titulos'" padding>
+
+
+  <ion-card-content text-wrap *ngFor="let number of numbers">
+    <ion-card-title>
+
+
+
+      <ion-icon name="ios-school-outline"> </ion-icon> {{ item.value[number].Titulo }}.<br>
+      <ion-icon name="ios-calendar-outline"> </ion-icon> {{ item.value[number].Vigencia }}.<br>
+
+
+
+    </ion-card-title>
+
+  </ion-card-content>
+</ion-content>
+
+<ion-content  *ngIf="item.type ==  'especialidades'" padding>
+
+  <ion-card-content text-wrap *ngFor="let number of numbers">
+    <ion-card-title>
+
+
+
+      <ion-icon name="ios-school-outline"> </ion-icon> {{ item.value[number].Especialidad }}.<br>
+      <ion-icon name="ios-calendar-outline"> </ion-icon> {{ item.value[number].Vigencia }}.<br>
+
+
+
+    </ion-card-title>
+
+  </ion-card-content>
+</ion-content>
+
+<ion-content  *ngIf="item.type ==  'cursos'" padding>
+
+  <ion-card-content text-wrap *ngFor="let number of numbers">
+    <ion-card-title>
+
+
+
+      <ion-icon name="ios-school-outline"> </ion-icon> {{ item.value[number].Curso }}.<br>
+      <ion-icon name="ios-calendar-outline"> </ion-icon> {{ item.value[number].Vigencia }}.<br>
+
+
+
+    </ion-card-title>
+
+  </ion-card-content>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-content padding>
+  <ion-header>
+    <ion-navbar>
+      <ion-title>Home</ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding class="action-sheets-basic-page">
+    <h2>Bienvenidos app tripulantes</h2>
+
+
+      <button ion-button block (click)="scan()">
+        <ion-icon ios="ios-camera" md="ios-camera"></ion-icon>
+        <ion-label>SCAN ID CARD</ion-label>
+      </button>
+
+      <button ion-button block (click)="input()" color="secondary">
+        <ion-icon ios="ios-search" md="ios-search"></ion-icon>
+        <ion-label>SEARCH ID CARD</ion-label>
+      </button>
+  </ion-content>
+</ion-content>
